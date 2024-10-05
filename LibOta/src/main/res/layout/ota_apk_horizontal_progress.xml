@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="1dip"
+        android:layout_marginEnd="20dip"
+        android:layout_marginStart="20dip"
+        android:layout_marginTop="12dip"
+        android:progressDrawable="@drawable/ota_progress_horizontal_style"
+        />
+
+    <TextView
+        android:id="@+id/progress_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="14dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/progress"
+        android:layout_marginEnd="20dip"
+        android:layout_marginStart="20dip"
+        android:paddingBottom="12dip"/>
+
+    <TextView
+        android:id="@+id/progress_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="14dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/progress"
+        android:layout_marginEnd="20dip"
+        android:layout_marginStart="20dip"
+        android:paddingBottom="12dip"/>
+
+    <Button
+        android:id="@+id/btn_retry"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="16dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#000000"
+        android:background="@drawable/ota_retry_shape"
+        android:layout_below="@id/progress_number"
+        android:text="重试" />
+</RelativeLayout>
+
